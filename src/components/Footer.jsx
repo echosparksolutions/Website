@@ -2,9 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import {
   FaDribbbleSquare,
-  FaFacebookSquare,
   FaGithubSquare,
-  FaInstagram,
   FaTwitterSquare
 } from "react-icons/fa";
 
@@ -13,20 +11,20 @@ const Footer = () => {
     <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300'>
       <div>
         <h3 className='w-full text-2xl text-[#00df9a]'>ECHOSPARK SOLUTIONS INC</h3>
-        <p className='py-4'>California, USA</p>
+        <p className='py-4'>868 Oak Gln, Irvine,California - 92618, USA</p>
         <p>Email: hr@echosparksolutions.com</p>
         <p>Phone: +1 732-910-9449</p>
         <p>&copy; 2024 | EchoSpark Solutions, Inc. All rights reserved.</p>
 
         <div className='flex justify-between md:w-[75%] my-6'>
-            <FaFacebookSquare size={30} />
-            <FaInstagram size={30} />
             <FaTwitterSquare size={30} />
-            <FaGithubSquare size={30} />
+            <a href="https://github.com/">
+              <FaGithubSquare size={30} />
+            </a>
             <FaDribbbleSquare size={30} />
         </div>
       </div>
-      <div className='lg:col-span-2 flex justify-between mt-6'>
+      <div className='lg:col-span-2 flex justify-around mt-6'>
     <div>
         <h6 className='font-medium text-gray-400'>Solutions</h6>
         <ul>
